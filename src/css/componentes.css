@@ -1,0 +1,22 @@
+/* Botón de calcular */
+#calculate-btn {
+    transition: background-color 0.3s ease;
+}
+
+#calculate-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor de resultados */
+.results-container {
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Mensajes de error */
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #f5c6cb;
+}

@@ -1,0 +1,13 @@
+/* Estilos por defecto (móviles) */
+.container {
+    padding: 20px;
+    width: 100%;
+}
+
+/* Pantallas de tabletas y más grandes */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+        margin: 50px auto; /* Centrar en pantallas grandes */
+    }
+}
