@@ -1,0 +1,35 @@
+{
+  "name": "calculadora-de-impuestos",
+  "version": "1.0.0",
+  "description": "Una aplicación web simple para calcular impuestos basada en un precio base y una tasa de impuesto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration",
+    "test:acceptance": "jest tests/acceptance",
+    "start": "npx http-server src -p 8080"
+  },
+  "keywords": [],
+  "author": "Christofer Rivera",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "babel-jest": "^30.2.0",
+    "http-server": "^14.1.1",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "puppeteer": "^24.29.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/tests/**/*.test.js"
+    ]
+  },
+  "type": "module"
+}
